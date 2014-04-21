@@ -13,7 +13,11 @@
 #define SharedPadDelegate   ((AppDelegate *)[UIApplication sharedApplication].delegate)
 #define kURLScheme @"yhyw_iphone"
 
+//ios7
+#define ISIOS7 [[[UIDevice currentDevice] systemVersion] floatValue] >= 7
 
+// RELEASE AND SET NIL
+#define OTS_SAFE_RELEASE(_obj) if ((_obj)) {[(_obj) release]; (_obj) = nil;}
 
 //Address
 #define kYaoDefaultProvinceName @"上海市"

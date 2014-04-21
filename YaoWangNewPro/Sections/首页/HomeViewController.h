@@ -10,4 +10,6 @@
 
 @interface HomeViewController : YWBaseViewController
 
+-(void)initHomePage;                                        //首页初始化
+-(void)initData;
 @end

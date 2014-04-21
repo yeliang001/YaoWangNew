@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6732514D18FF7273003A33C9 /* tabbar_homepage_unsel.png in Resources */ = {isa = PBXBuildFile; fileRef = 6732514B18FF7273003A33C9 /* tabbar_homepage_unsel.png */; };
+		6732514E18FF7273003A33C9 /* tabbar_homepage_unsel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6732514C18FF7273003A33C9 /* tabbar_homepage_unsel@2x.png */; };
+		6732515018FF73F6003A33C9 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 6732514F18FF73F6003A33C9 /* transparent.png */; };
+		6732515418FFAD07003A33C9 /* OTSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6732515318FFAD07003A33C9 /* OTSLoadingView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6DD626AC9DA24052922EB4BC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFA66E4D8E471FAEC95AC1 /* libPods.a */; };
 		A390AA0418DD5D8600DE643D /* YWTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A390AA0318DD5D8600DE643D /* YWTabBarViewController.m */; };
 		A395CE0A18DBEE7900C0E0FB /* YWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A395CE0918DBEE7900C0E0FB /* YWBaseViewController.m */; };
@@ -104,6 +108,11 @@
 
 /* Begin PBXFileReference section */
 		4CBFA66E4D8E471FAEC95AC1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6732514B18FF7273003A33C9 /* tabbar_homepage_unsel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_homepage_unsel.png; path = Image/tabbar_homepage_unsel.png; sourceTree = "<group>"; };
+		6732514C18FF7273003A33C9 /* tabbar_homepage_unsel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar_homepage_unsel@2x.png"; path = "Image/tabbar_homepage_unsel@2x.png"; sourceTree = "<group>"; };
+		6732514F18FF73F6003A33C9 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transparent.png; path = Image/transparent.png; sourceTree = "<group>"; };
+		6732515218FFAD07003A33C9 /* OTSLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLoadingView.h; sourceTree = "<group>"; };
+		6732515318FFAD07003A33C9 /* OTSLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLoadingView.m; sourceTree = "<group>"; };
 		8EE0CC09F2D143FD996BECBA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A390AA0218DD5D8600DE643D /* YWTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWTabBarViewController.h; sourceTree = "<group>"; };
 		A390AA0318DD5D8600DE643D /* YWTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWTabBarViewController.m; sourceTree = "<group>"; };
@@ -278,6 +287,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6732515118FFAD07003A33C9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6732515218FFAD07003A33C9 /* OTSLoadingView.h */,
+				6732515318FFAD07003A33C9 /* OTSLoadingView.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A3A6C89D18D97C08002F0989 = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +378,7 @@
 		A3A6C8D818D99BFA002F0989 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6732515118FFAD07003A33C9 /* Util */,
 				A3A6C8FA18D9AE62002F0989 /* Service */,
 				A3A6C8DF18D99C2D002F0989 /* Categories */,
 				A3A6C8E018D99C2D002F0989 /* Classes */,
@@ -464,10 +483,13 @@
 				A395CE2618DC4DD300C0E0FB /* tabbar_category_sel.png */,
 				A395CE2718DC4DD300C0E0FB /* tabbar_category_unsel.png */,
 				A395CE2818DC4DD300C0E0FB /* tabbar_homepage_sel.png */,
+				6732514B18FF7273003A33C9 /* tabbar_homepage_unsel.png */,
+				6732514C18FF7273003A33C9 /* tabbar_homepage_unsel@2x.png */,
 				A395CE2A18DC4DD300C0E0FB /* tabbar_more_sel.png */,
 				A395CE2B18DC4DD300C0E0FB /* tabbar_more_unsel.png */,
 				A395CE2C18DC4DD300C0E0FB /* tabbar_store_sel.png */,
 				A395CE2D18DC4DD300C0E0FB /* tabbar_store_unsel.png */,
+				6732514F18FF73F6003A33C9 /* transparent.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -686,6 +708,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6732515018FF73F6003A33C9 /* transparent.png in Resources */,
+				6732514D18FF7273003A33C9 /* tabbar_homepage_unsel.png in Resources */,
 				A395CE1918DC264900C0E0FB /* MoreViewController.xib in Resources */,
 				A395CE1418DC263A00C0E0FB /* CategoryViewController.xib in Resources */,
 				A395CE3718DC4DD300C0E0FB /* tabbar_store_unsel.png in Resources */,
@@ -697,6 +721,7 @@
 				A3A6C8BC18D97C08002F0989 /* Images.xcassets in Resources */,
 				A395CE3118DC4DD300C0E0FB /* tabbar_category_unsel.png in Resources */,
 				A395CE2F18DC4DD300C0E0FB /* tabbar_cart_unsel.png in Resources */,
+				6732514E18FF7273003A33C9 /* tabbar_homepage_unsel@2x.png in Resources */,
 				A395CE3518DC4DD300C0E0FB /* tabbar_more_unsel.png in Resources */,
 				A395CE1E18DC266100C0E0FB /* CartViewController.xib in Resources */,
 				A395CE2E18DC4DD300C0E0FB /* tabbar_cart_sel.png in Resources */,
@@ -802,6 +827,7 @@
 				A3A6C96118D9AEDB002F0989 /* LoginResultInfo.m in Sources */,
 				A3A6C96F18D9AEDB002F0989 /* SpecialRecommendInfo.m in Sources */,
 				A3A6C97018D9AEDB002F0989 /* SplitLogInfo.m in Sources */,
+				6732515418FFAD07003A33C9 /* OTSLoadingView.m in Sources */,
 				A3A6C8B618D97C08002F0989 /* main.m in Sources */,
 				A3A6C8F718D9AA70002F0989 /* UIColor+Common.m in Sources */,
 				A3A6C91818D9AE62002F0989 /* YWProductService.m in Sources */,
@@ -869,7 +895,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: lu xiaofeng (U7NNF2HR5B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: lu xiaofeng (U7NNF2HR5B)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -887,6 +914,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "17A50A30-AAB6-4811-B8C3-B22806E3B64E";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -908,6 +936,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: lu xiaofeng (U7NNF2HR5B)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -919,6 +948,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "17A50A30-AAB6-4811-B8C3-B22806E3B64E";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -931,10 +961,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: lu xiaofeng (U7NNF2HR5B)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YaoWangNewPro/YaoWangNewPro-Prefix.pch";
 				INFOPLIST_FILE = "YaoWangNewPro/YaoWangNewPro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "17A50A30-AAB6-4811-B8C3-B22806E3B64E";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -946,10 +980,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: lu xiaofeng (U7NNF2HR5B)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YaoWangNewPro/YaoWangNewPro-Prefix.pch";
 				INFOPLIST_FILE = "YaoWangNewPro/YaoWangNewPro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "17A50A30-AAB6-4811-B8C3-B22806E3B64E";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

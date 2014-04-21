@@ -30,14 +30,39 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self initHomePage];
     // Do any additional setup after loading the view from its nib.
 }
+
+#pragma mark - 初始化数据（页面，数据）
+//首页初始化
+-(void)initHomePage
+{
+	[self initData];
+    [self initHomePageUI];
+    [self setUpNewThread];
+}
+
+-(void)initData{
+    
+}
+
+-(void)initHomePageUI{
+    
+}
+
+-(void)setUpNewThread{
+    
+}
+
+#pragma mark - 
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 - (void)requestData
@@ -76,26 +101,18 @@
     
     if (resultInfo.bRequestStatus)
     {
-        self.bigImageAdList = ((NSArray *)resultInfo.resultObject)[0];
-        NSMutableArray *tempSmallAdList = ((NSArray *)resultInfo.resultObject)[1]; //这里是使用了iphone上的楼层数组
-        for (AdFloorInfo *floor in tempSmallAdList)
-        {
-            for (SpecialRecommendInfo *product in floor.productList)
-            {
-                [self.smallImageAdList addObject:product];
-            }
-        }
-        [self performSelectorOnMainThread:@selector(updateHomePage) withObject:nil waitUntilDone:YES];
+//        self.bigImageAdList = ((NSArray *)resultInfo.resultObject)[0];
+//        NSMutableArray *tempSmallAdList = ((NSArray *)resultInfo.resultObject)[1]; //这里是使用了iphone上的楼层数组
+//        for (AdFloorInfo *floor in tempSmallAdList)
+//        {
+//            for (SpecialRecommendInfo *product in floor.productList)
+//            {
+//                [self.smallImageAdList addObject:product];
+//            }
+//        }
+//        [self performSelectorOnMainThread:@selector(updateHomePage) withObject:nil waitUntilDone:YES];
     }
 }
-
-
-
-
-
-
-
-
 
 
 @end
